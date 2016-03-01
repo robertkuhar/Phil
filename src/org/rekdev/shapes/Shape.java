@@ -19,5 +19,7 @@ public abstract class Shape implements Named, Movable {
     return name;
   }
   
+  // So we satisfy the interface of Movable here, but we don't implement it, we leave that up 
+  // to the sub-classes
   public abstract void move(double deltaX, double deltaY );
 }
