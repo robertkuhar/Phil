@@ -25,7 +25,7 @@ public class Line extends Shape {
     this.p1 = p1;
     this.p2 = p2;
   }
-
+  
   public void move(double deltaX, double deltaY) {
     this.p1.move(deltaX, deltaY);
     this.p2.move(deltaX, deltaY);

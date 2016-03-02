@@ -5,9 +5,9 @@ import java.util.logging.Logger;
 public class Point extends Shape {
   private double x;
   private double y;
-  
+
   private static final Logger logger = Logger.getLogger("org.rekdev.shapes");
-  
+
   public Point(double x, double y) {
     this.x = x;
     this.y = y;
@@ -34,6 +34,4 @@ public class Point extends Shape {
     x += deltaX;
     y += deltaY;
   }
-  
-  public static void bob() {}
 }
