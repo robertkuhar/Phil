@@ -43,6 +43,10 @@ public class Somemain {
       return line;
     } catch (MyIllegalArgumentException e) {
       e.printStackTrace();
+    } catch (IllegalArgumentException e) {
+      e.printStackTrace();
+    } finally {
+      logger.info("I'm out of here");
     }
     return null;
   }
