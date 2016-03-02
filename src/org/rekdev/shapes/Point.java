@@ -1,8 +1,12 @@
 package org.rekdev.shapes;
 
+import java.util.logging.Logger;
+
 public class Point extends Shape {
   private double x;
   private double y;
+  
+  private static final Logger logger = Logger.getLogger("org.rekdev.shapes");
   
   public Point(double x, double y) {
     this.x = x;
@@ -26,9 +30,10 @@ public class Point extends Shape {
   }
 
   @Override
-  public void move(double deltaX, double delataY) {
-    this.x += deltaX;
-    this.y += delataY;
+  public void move(double deltaX, double deltaY) {
+    x += deltaX;
+    y += deltaY;
   }
-
+  
+  public static void bob() {}
 }
